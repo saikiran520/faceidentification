@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'auth_screen.dart';
 import 'camera_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,10 +15,16 @@ class HomeScreen extends StatelessWidget {
           child: const Text("Open Camera"),
           onPressed: () {
 
-            Navigator.push(
+            /*Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (_) => const CameraScreen(),
+              ),
+            );*/
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => const AuthScreen(),
               ),
             );
 

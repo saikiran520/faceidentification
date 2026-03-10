@@ -67,12 +67,13 @@ class _CameraScreenState extends State<CameraScreen> {
       return;
     }
 
-    Navigator.push(
+    /*Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => ResultScreen(embedding),
       ),
-    );
+    );*/
+    Navigator.pop(context, embedding);
   }
 
   @override
