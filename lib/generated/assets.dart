@@ -6,6 +6,14 @@ class Assets {
   Assets._();
 
   static const String mobilefacenet = 'assets/mobilefacenet.tflite';
+  static const $AssetsAssetsGen assets = $AssetsAssetsGen();
+}
+
+class $AssetsAssetsGen {
+  const $AssetsAssetsGen();
+
+  final AssetGenImage icecream = const AssetGenImage('assets/icecream.jpg');
+  final String mobilefacenet = 'assets/mobilefacenet.tflite';
 }
 
 class AssetGenImage {

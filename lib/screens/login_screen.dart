@@ -33,7 +33,7 @@ class LoginScreen extends StatelessWidget {
     print("LOGIN REQUEST: $body");
 
     final response = await http.post(
-      Uri.parse("http://192.168.137.1:3000/api/customer/face-login"),
+      Uri.parse("http://10.0.1.10:3000/api/customer/face-login"),
       headers: {"Content-Type": "application/json"},
       body: jsonEncode(body),
     );

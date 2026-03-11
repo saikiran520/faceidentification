@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'kiosk/screens/kiosk_home_screen.dart';
 import 'screens/home_screen.dart';
 
 void main() {
@@ -11,7 +12,9 @@ class FaceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomeScreen(),
+      debugShowCheckedModeBanner: false,
+      // home: HomeScreen(),
+      home: KioskHomeScreen(),
     );
   }
 }
